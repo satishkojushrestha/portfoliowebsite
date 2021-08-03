@@ -1,0 +1,359 @@
+
+/* logo */
+.logocontainer{
+    position: fixed;
+    top:6px;
+    left: 57px;
+    width: 65px;
+    height: 57px;
+    border-radius: 100%;
+    z-index: 5;
+}
+.logocontainer img{
+    width: 100%;
+    height: 100%;
+}
+/* properties of nav bar */
+.navbar{
+    position: fixed;
+    top: -16px;
+    height: 20%;
+    left: auto;
+    width: 505px;
+    right: 20px;
+    z-index: 20;
+    overflow: hidden;
+}
+.menu{
+    width: 100%;
+    height: 100%;
+    font-family: Sarala;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.menu li{
+    list-style: none;
+    float: left;
+}
+.menu li a{
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    cursor: pointer; 
+    padding: 7px 20px 7px 19px;
+    color: white;
+}
+
+.menu li a:hover{
+    opacity: 91%; 
+    background-color: white;
+    color: black;
+}
+.disabled{
+    pointer-events: none;
+    cursor: default;
+}
+
+.active{
+    position: absolute;
+    top:52px;
+    left:42px;
+    width: 80px;
+    height: 2px;
+    background-color:#b53131;
+}
+.active_2{
+    position: absolute;
+    top:52px;
+    left:125px;
+    width: 65px;
+    height: 2px;
+    background-color:#78B49E;
+}
+.active_3{
+    position: absolute;
+    top:52px;
+    left:199px;
+    width: 60px;
+    height: 2px;
+    background-color:red;
+}
+.active_4{
+    position: absolute;
+    top:52px;
+    left:282px;
+    width: 84px;
+    height: 2px;
+    background-color:red;
+}
+.active_5{
+    position: absolute;
+    top:52px;
+    left:402px;
+    width: 90px;
+    height: 2px;
+    background-color:red;
+}
+
+/* end of nav bar properties */
+
+
+/* properties for main */
+.main{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    background-color: white;
+}
+/* image1 holds the properties for img1 */
+.image1{
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    /* background-color: white; */
+}
+.img1{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/light-landscape-sky-sunset-35888.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+.textover{
+    position: absolute;
+    top: 282px;
+    left: 150px;
+    width: 513px;
+    height: 123px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    color: white;
+    text-align: center;
+}
+.credit{
+    position: fixed;
+    top: auto;
+    bottom: 36px;
+    height: 20px;
+    color: #a7a4a4;
+    width: 200px;
+    left: 10px;
+    font-size: 12px;
+    z-index: 0;
+    font-family: cursive;
+    font-weight: normal;
+}
+/* end of image 1 properties */
+/* start of text field*/
+.textfield{
+    position: relative;
+    height:400px;
+    width:100%;
+    left: 0;
+    top: 0;
+    background-color: white;
+}
+.imageslider{
+    position: relative;
+    top: 20px;
+    left: 20px;
+    width: 595px;
+    height: 365px;
+    /* background-color: black; */ /*Color is give so to specify the width and height of the division*/
+}
+#img49{
+    width: 100%;
+    height: 100%;
+}
+#img49 img{
+    padding: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.quotes{
+    position: absolute;
+    /* background-color: red; */
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 643px;
+}
+#quotestext{
+    position: relative;
+    top: 0;
+    left: 0;
+    /* background-color: black; */
+    width: 100%;
+    height: 60%;
+    text-align: center;
+    color: black;
+}
+.buttonarea{
+    position: relative;
+    top: -40px;
+    width: 100%;
+    height: 50px;
+    /* background-color: white; */
+}
+.button{
+    position: absolute;
+    left: 38%;
+    width: 40%;
+    height: 100%;
+    list-style-type: none;
+}
+.button li{
+    float: left;
+    padding: 0px 12px;
+}
+.prevbtn{
+    border:0;
+    background-color: #882d00;
+    color: white;
+    height: 30px;
+    width: 70px;
+}
+.nextbtn{
+    border:0;
+    background-color: #882d00;
+    color: white;
+    height: 30px;
+    width: 70px;
+}
+
+/* end of textfield properties */
+.image2{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    /* background-color: black; */ /*backgroiund color so to specify the coverage*/
+}
+.img2{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/business-identity-blank-stationery-set-on-wood-background-6372.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+.textover23{
+    position: absolute;
+    top: auto;
+    bottom: 15%;
+    right: 17%;
+    width: 36%;
+    height: 415px;
+    /* background-color: black; */
+}
+.text24{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    font-family: cursive;
+    /* background-color: red; */
+    text-align: center;
+}
+/* end of image2 properties */
+
+/* footer */
+.footer{
+    position: fixed;
+    top:auto;
+    left: 20%;
+    bottom: 0px;
+    width: 65%;
+    height: 55px;
+    float: left;
+    overflow: hidden;
+    background-color: black;
+}
+.footerlogo{
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /* background-color: red; */
+}
+.footertext{
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    left: 30%;
+    top: 0;
+    /* background-color: blue; */
+}
+/* This is ul */
+.footerlink{
+    list-style-type: none;
+    padding: 0;
+    margin: 8px 135px;
+}
+.footerlink li{
+    float: left;
+    padding: 10px;
+    font-size: 20px;
+}
+.footerlink li a{
+    text-decoration: none;
+    display: block;
+}
+.footerlink li:hover{
+    background-color: blanchedalmond;
+}
+.footertext h1{
+    padding: 0;
+    margin: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: white;
+    font-weight: lighter;
+}
+
+
+/* for blog */
+.main_blog{
+    position: absolute;
+    width: 100%;
+    top:55px;
+    height: 800px;
+    /* background-color: red; */
+    left: 0;
+}
+.main_blog table{
+    position: absolute;
+    width: 55%;
+    height: auto;
+    left: 23%;
+    top:20px;
+    background-color: white;
+}
+.main_blog table,th,td{
+    border: 7px #97142b solid;
+    border-collapse: collapse;
+    color: black;
+}
+
+table th{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+table td{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*end of properties for blog*/
