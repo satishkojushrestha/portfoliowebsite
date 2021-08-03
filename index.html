@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <meta name="description" content="This is my home page">
+    <meta name="keywords" content="HTML,CSS,JavaScript,Portfolio">
+    <meta name="author" content="Satish Koju Shrestha">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <style>
+        .footertext h1{
+            color: #507b64;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <ul class="menu">
+                <li><a href="#" class="disabled">Home</a></li>
+                <li><a href="CV.html">CV</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="Research.html">Research</a></li>
+                <li><a href="Contact Us.html">Contact Us</a></li>
+            </ul>
+            <div class="active"></div>
+        </div>
+        <div class="logocontainer">
+            <img src="images/Logo.png" alt="logo"> <!--Logo-->
+        </div>
+    </div>
+    <!-- main contains images and texts -->
+    <div class="main">
+        <!-- image 1 has img1 -->
+        <div class="image1">
+            <div class="img1"></div><!--This tag contains background images-->
+            <!-- here text over is the text over the first image img1 -->
+            <div class="textover">
+                <h1>Welcome to my page</h1>
+                <hr style="background-color:#507b64;height: 4px;width: 55%;border: 0;">
+                <h6>This is the design of my page. Hope you like it.</h6>
+            </div>
+            <div class="credit">
+                <h6>Photo by Pixabay from Pexels</h6>
+            </div>
+        </div>
+        <!-- end of image 1 -->
+        <!-- textfield is created to create space between image1 and image2 and also to put some contains -->
+        <div class="textfield">
+            <div class="imageslider">
+                <div id="img49">
+                    <img src="images/person-holding-camera-with-red-lights-on-lens-1413906.jpg">
+                </div>
+            </div>
+            <div class="quotes">
+                <div id="quotestext">
+                    <p><h1>Photography</h1><h2>“In photography there is a reality so subtle that it becomes more real than reality.”</h2><h3>-- Alferd Stieglitz</h3></p>
+                </div>
+                <div class="buttonarea">
+                    <ul class="button">
+                        <li><button class="prevbtn" onclick="previous()">Previous</button></li>
+                        <li><button class="nextbtn" type="button" onclick="next()">Next</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- image2 contains another image which is under tag img2 -->
+        <div class="image2">
+            <div class="img2"></div><!--This tag contains background images-->
+            <div class="textover23">
+                <div class="text24">
+                    <p><h1>“You've gotta dance like there's nobody watching,
+                        Love like you'll never be hurt,
+                        Sing like there's nobody listening,
+                        And live like it's heaven on earth.”
+                        </h1><h4>― William W. Purkey</h4></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footerlogo">
+            <ul class="footerlink">
+                <li><a href="https://www.facebook.com/anonymous8848" target="_blank"><i class="fa fa-facebook" style="color:blue;opacity: 80%;"></i></a></li>
+                <li><a href="https://www.instagram.com/stha_________/" target="_blank"><i class="fa fa-instagram" style="color:purple;opacity: 100%;"></i></a></li>
+            </ul>
+        </div>
+        <div class="footertext">
+            <h1>Rights reserved © Satish Koju Shrestha</h1>
+        </div>
+    </div>
+      <script>
+          // for button
+        
+        var quotes = ['“Photography is a way of feeling, of touching, of loving. What you have caught on film is captured forever… It remembers little things, long after you have forgotten everything.”','“It’s one thing to make a picture of what a person looks like, it’s another thing to make a portrait of who they are.”'];
+        var author = ['--Aaron Siskind','--Paul Caponigro'];
+        var a=0;
+        var n = quotes.length;
+        var change = document.getElementById('quotestext');
+        function next(){
+            // console.log(a);
+            if(a<n){
+                change.innerHTML="<p>"+"<h1>"+"Photography"+"</h1>"+"<h2>"+quotes[a]+"</h2>"+"<h3>"+author[a]+"</h3>"+"</p>";
+            } 
+            a++;
+        }
+        var b=n-1;
+        function previous(){
+            if(b>=0){
+                change.innerHTML="<p>"+"<h1>"+"Photography"+"</h1>"+"<h2>"+quotes[b]+"</h2>"+"<h3>"+author[b]+"</h3>"+"</p>";
+                b--;
+            } 
+            else{
+                alert("Sorry there are no other quotes.")
+            }
+        }
+        //for slider
+        var images = ['images/person-holding-camera-with-red-lights-on-lens-1413906.jpg','images/men-s-white-button-up-dress-shirt-708440.jpg','images/calm-body-of-water-1363876.jpg'];
+
+        var x = 0;
+
+        var imgs = document.getElementById('img49');
+
+        setInterval(slider, 3000);
+
+        function slider() {
+            if (x < images.length) {
+                x = x + 1;
+            } else {
+                x = 1;
+            }
+
+            imgs.innerHTML = "<img src=" + images[x - 1] + ">";
+        }
+      </script>
+</body>
+</html>

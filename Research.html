@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Research</title>
+    <meta name="description" content="This is Research page">
+    <meta name="keywords" content="HTML,CSS,JavaScript,Portfolio">
+    <meta name="author" content="Satish Koju Shrestha">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <style>
+        body{
+            background-image: url('images/person-holding-camera-with-red-lights-on-lens-1413906.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .main_research{
+            position: absolute;
+            top:65px;
+            left: 0;
+            width: 100%;
+            height: 2000px;
+            /* background-color: black; */
+        }
+        .twoimages{
+            position: relative;
+            top: 0;
+            left: 2%;
+            height: 36%;
+            width: 96%;
+            /* background-color: red; */
+        }
+        .textresearch h1{
+            color: white;
+        }
+        .imagess1{
+            position: absolute;
+            top: 45px;
+            left: 0px;
+            width: 45%;
+            height: 93%;
+            /* background-color: white; */
+        }
+        .imagess1 img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        .imagess2{
+            position: absolute;
+            /* background-color: white; */
+            top: 45px;
+            left: 50%;
+            width: 45%;
+            height: 93%;
+        }
+        .imagess2 img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="CV.html">CV</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="#" class="disabled">Research</a></li>
+                <li><a href="Contact Us.html">Contact Us</a></li>
+            </ul>
+            <div class="active_4"></div>
+            <div class="logocontainer">
+                <img src="images/Logo.png" alt="logo"> <!--Logo-->
+            </div>
+        </div>
+    </div>
+    <div class="main_research">
+        <!-- two images tag hold two images and some text -->
+        <div class="twoimages">
+            <div class="textresearch">
+                <h1>Research 1: Homepage</h1>
+            </div>
+            <div class="imagess1">
+                <img src="images/homepage.png" alt="homepage">
+            </div>
+            <div class="imagess2">
+                <img src="images/homepage2.png" alt="homepage">
+            </div>
+        </div>
+        <!-- The position is relative so if we create div below  twoimages div it will start positioning below the twoimages div -->
+        <div class="twoimages">
+            <div class="textresearch">
+                <h1>Research 2: CV page</h1>
+            </div>
+            <div class="imagess1">
+                <img src="images/CV.png" alt="CV">
+            </div>
+            <div class="imagess2">
+                <img src="images/CV2.png" alt="CV">
+            </div>
+        </div>
+        <div class="twoimages">
+            <div class="textresearch">
+                <h1>Research 3: Footer</h1>
+            </div>
+            <div class="imagess1">
+                <img src="images/Footer.png" alt="footer">
+            </div>
+            <div class="imagess2">
+                <img src="images/footer2.png" alt="footer">
+            </div>
+        </div>
+        <div class="twoimages">
+            <div class="textresearch">
+                <h1>Research 4: Form <small>Although the design is not same i have used the concept.</small></h1>
+            </div>
+            <div class="imagess1">
+                <img src="images/form.png" alt="form">
+            </div>
+            <div class="imagess2">
+                <img src="images/Annotation 2020-01-16 221437.png" alt="form">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

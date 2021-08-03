@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Us</title>
+    <meta name="description" content="This is contact page">
+    <meta name="keywords" content="HTML,CSS,JavaScript,Portfolio">
+    <meta name="author" content="Satish Koju Shrestha">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <style>
+        body{
+            background: url('images/calm-body-of-water-1363876.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .formspace12{
+            position: absolute;
+            top: 13%;
+            left: 29%;
+            width: 45%;
+            height: 60%;
+            opacity: 80%;
+            background-color: #1F302D;
+            text-align: center;
+        }
+        .input{
+            width: 270px;
+            height: 45px;
+            border:0;
+            border-radius: 10px/10px;
+        }
+        .formfeed{
+            width: 100%;
+            height: 100%;
+            border: 0;
+            border-radius: 6px;
+            height: 25px;
+            width: 305px;
+            margin: 2px;
+            padding: 2px;
+        }
+        .feedbacktable{
+            position: absolute;
+            width: 20%;
+            left: 10%;
+            height: 100%;
+        }
+        .feedbacktable,th,td{
+            border:0;
+            border-collapse: collapse;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="CV.html">CV</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="Research.html">Research</a></li>
+                <li><a href="#" class="disabled">Contact Us</a></li>
+            </ul>
+            <div class="active_5"></div>
+            <div class="logocontainer">
+                <img src="images/Logo.png" alt="logo"> <!--Logo-->
+            </div>
+        </div>
+    </div>
+    <!-- main-contact contains the form and teble -->
+    <div class="main_contact">
+        <div class="formspace12">
+        	<!-- form is created -->
+            <form name="feedback" onsubmit="valid()" class="formfeed">
+            	<!-- table tag is opened inside the form tag -->
+                <table class="feedbacktable">
+                    <tr>
+                        <th colspan="2">Feedback Form</th>
+                    </tr>
+                    <tr>
+                        <td>First Name:</td>
+                        <td><input type="text" name="fn" class="input" placeholder="First Name"></td>
+                    </tr>
+                    <tr>
+                        <td>Last Name:</td>
+                        <td><input type="text" name="ln" class="input" placeholder="Last Name"></td>
+                    </tr>
+                    <tr>
+                        <td>User Name:</td>
+                        <td><input type="text" name="user" class="input" placeholder="Username"></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="text" name="email" class="input" placeholder="Email"></td>
+                    </tr>
+                    <tr>
+                        <td>Gender:</td>
+                        <td style="margin: 0;padding: 0;text-align: left;"><input type="radio" name="gender" value="male">Male  <input type="radio" name="gender" value="female">Female </td>
+                    </tr>
+                    <tr>
+                        <td><textarea name="txtarea" cols="50" rows="10" placeholder="Feedback"></textarea></td>
+                        <td><input type="submit" value="submit" style="border: 1px rgb(87, 187, 50) solid; background-color: rgb(87, 187, 50);width: 115px;height: 40px;"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footerlogo">
+            <ul class="footerlink">
+            	<!-- link for facebook and instagram -->
+                <li><a href="https://www.facebook.com/anonymous8848" target="_blank"><i class="fa fa-facebook" style="color:blue;opacity: 80%;"></i></a></li>
+                <li><a href="https://www.instagram.com/stha_________/" target="_blank"><i class="fa fa-instagram" style="color:purple;opacity: 100%;"></i></a></li>
+            </ul>
+        </div>
+        <div class="footertext">
+            <h1 style="opacity: 80%;">Rights reserved © Satish Koju Shrestha</h1>
+        </div>
+    </div>
+    <script src="js/form.js"></script>
+
+</body>
+</html>
